@@ -12,7 +12,7 @@ const n2=document.getElementById("n2")
 const n3=document.getElementById("n3")
 (async function (){
   await require.CreadorCraftInit();
-  loli.src = "data:image/png;base64,"+atob(require("./loli.png"));
+  loli.src = "data:image/png;base64,"+atob(require("loli.png"));
 })();
 var gravedad = 0.15;
 var velocidad = 0;
