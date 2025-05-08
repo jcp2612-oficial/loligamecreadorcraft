@@ -1,0 +1,9 @@
+{
+"name":"Loli Game",
+"version":"1.0.2",
+"description":"Loli game juego de plataforma creado por jcp2612",
+"mainHtml":"index.html",
+"mainCSS":"index.css",
+"mainJS":"index.js",
+ "onCommonJS":true
+}
