@@ -10,7 +10,10 @@ const coins= document.getElementById("coins")
 const n1=document.getElementById("n1")
 const n2=document.getElementById("n2")
 const n3=document.getElementById("n3")
-loli.src = "data:loli/png;base64,"+atob(require("./loli.png"));
+(async function (){
+  await require.CreadorCraftInit();
+  loli.src = "data:image/png;base64,"+atob(require("./loli.png"));
+})();
 var gravedad = 0.15;
 var velocidad = 0;
 var position = 0;
