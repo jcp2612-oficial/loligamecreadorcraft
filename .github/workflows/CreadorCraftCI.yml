@@ -1,0 +1,19 @@
+name: CreadorCraftCI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[ci skip]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: CreadorCraft-Maker
+        uses: Creadores-Program/CreadorCraft-Maker-GHA@v1.1.0
+        with:
+          path: "./"
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LoliGame
+          path: gameBuildCCM/Loli Game 1.0.2.creadorcraftgame.zip
